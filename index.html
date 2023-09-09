@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Desmos | Graphing Calculator</title> 
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+       <link rel="icon" type="image/x-icon" href="desmos.png">
+    </head>
+
+    <style>
+        html {
+            height: 100%;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        body {
+            background-color: rgb(39, 39, 39);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .container_body {
+    background-color: rgb(71, 75, 82);
+    width: 60%;
+    height: 65vh;
+    border-radius: 2vh;
+    margin-top: 12.5vh;
+    transition: 1s ease-out 100ms;
+    border-style: solid;
+    border-color: rgb(98, 103, 112);
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next row */
+    justify-content: flex-start; /* Adjust this to your preferred alignment */
+    align-content: flex-start; /* Add this to control vertical alignment */
+    padding: 1%;
+    box-shadow: 0 0 50px rgb(0, 0, 0);
+}
+
+        .container_body:hover {
+            scale:1.04;
+        }
+
+        .button_styles {
+    font-size: 2vh;
+    max-width:  70%;
+    height: 5vh;
+    background-color: rgb(0, 87, 238);
+    border-radius: 1vh;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: rgb(98, 103, 112);
+    border-width: 0.15vh;
+    align-items: center;
+    padding: 0 1vh; /* Add horizontal padding to create spacing */
+    align-items: center;
+    display: flex;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0);
+     margin-right: 1%;
+     margin-top: 0.5%;
+}
+
+.button_styles a {
+    color: #f0f0f0;
+    margin-top: -5%;
+    text-decoration: none;
+}      
+
+
+ .button_styles:hover {
+    background-color: rgb(0, 94, 255);
+    animation: glow 0.75s infinite alternate ease; 
+    transition: box-shadow 2s ease-in;
+ }
+
+ @keyframes glow {
+  0% {
+    box-shadow: 0 0 30px rgb(0, 94, 255);
+  }
+  100% {
+    box-shadow: 0 0 50px rgb(120, 144, 255); /* Adjust the color and blur as needed */
+  }
+}
+
+.bottom-title1 {
+    position: absolute;
+    text-align: center;
+    animation: changeColor 5s linear infinite;
+    font-size: 7vh;
+    top: 85%;
+}
+
+@keyframes changeColor {
+    0% { color: rgb(0, 60, 255); text-shadow: 0 0 25px rgb(0, 60, 255); }
+    50% { color: rgb(42, 156, 223); text-shadow: 0 0 25px rgb(42, 156, 223); }
+    100% { color: rgb(0, 60, 255); text-shadow: 0 0 25px rgb(0, 60, 255); }
+  }
+    </style>
+
+    <body>
+<div class="container_body">
+    <div class="button_styles"><a href="gs/1v1.lol/index.html" >1v1.lol</a></div>
+    <div class="button_styles"><a href="gs/2048/index.html" >2048</a></div>
+    <div class="button_styles"><a href="gs/adofai/index.html" >ADOFAI</a></div>
+    <div class="button_styles"><a href="gs/bacon-may-die/index.html" >Bacon May Die</a></div>
+    <div class="button_styles"><a href="gs/baldisbasics/index.html" >Baldi's Basics</a></div>
+    <div class="button_styles"><a href="gs/basket-random/index.html" >Basket Random</a></div>
+    <div class="button_styles"><a href="gs/bigredbutton/index.html" >Big Red Button</a></div>
+    <div class="button_styles"><a href="gs/bitlife/index.html" >Bitlife</a></div>
+    <div class="button_styles"><a href="gs/blumgi/index.html" >Blumgi</a></div>
+    <div class="button_styles"><a href="gs/breaking-idle/index.html" >Breaking Idle</a></div>
+    <div class="button_styles"><a href="gs/btd4/index.html" >Bloon TD 4</a></div>
+    <div class="button_styles"><a href="gs/burritobison/index.html" >Burrito Bison</a></div>
+    <div class="button_styles"><a href="gs/cell-machine/index.html" >Cell Machine</a></div>   
+    <div class="button_styles"><a href="gs/cluster-rush/index.html" >Cluster Rush</a></div>
+    <div class="button_styles"><a href="gs/cookieclicker/index.html" >Cookie Clicker</a></div>
+    <div class="button_styles"><a href="gs/craftmine/index.html" >Craftmine</a></div>
+    <div class="button_styles"><a href="gs/crossyroad/index.html" >Crossyroad</a></div>
+    <div class="button_styles"><a href="gs/csgo-clicker/index.html" >CSGO Clicker</a></div>
+    <div class="button_styles"><a href="gs/dadish/index.html" >Dadish</a></div>
+    <div class="button_styles"><a href="gs/dadish-2/index.html" >Dadish 2</a></div>
+    <div class="button_styles"><a href="gs/deathrun/index.html" >Deathrun</a></div>
+    <div class="button_styles"><a href="gs/dino-game/index.html" >Dino Game</a></div>
+    <div class="button_styles"><a href="gs/DogeMiner/index.html" >DogeMiner</a></div>
+    <div class="button_styles"><a href="gs/doodle-jump/index.html" >Doodle Jump</a></div>
+    <div class="button_styles"><a href="gs/dreader/index.html" >Dreader</a></div>
+    <div class="button_styles"><a href="gs/drift-hunters/index.html" >Drift Hunters</a></div>
+    <div class="button_styles"><a href="gs/drive-mad/index.html" >Drive Mad</a></div>
+    <div class="button_styles"><a href="gs/ducklife1/index.html" >Duck Life 1</a></div>
+    <div class="button_styles"><a href="gs/ducklife2/index.html" >Duck Life 2</a></div>
+    <div class="button_styles"><a href="gs/ducklife3/index.html" >Duck Life 3</a></div>
+    <div class="button_styles"><a href="gs/ducklife4/index.html" >Duck Life 4</a></div>
+    <div class="button_styles"><a href="gs/eggy-car/index.html" >Eggy Car</a></div>
+    <div class="button_styles"><a href="gs/fancypantsadventures/index.html" >FancyPants Adventures</a></div>
+    <div class="button_styles"><a href="gs/flappy-bird/index.html" >Flappy Bird</a></div>
+    <div class="button_styles"><a href="gs/fnac/index.html" >Five Night's Candies</a></div>
+    <div class="button_styles"><a href="gs/FNAF/index.html" >FNAF 1</a></div>
+    <div class="button_styles"><a href="gs/FNAF2/index.html" >FNAF 2</a></div>
+    <div class="button_styles"><a href="gs/FNAF3/index.html" >FNAF 3</a></div>
+    <div class="button_styles"><a href="gs/FNAF4/index.html" >FNAF 4</a></div>
+    <div class="button_styles"><a href="gs/fnaw/Five.Nights.At.Winstons..html" >Five Night's At Winston</a></div>
+    <div class="button_styles"><a href="gs/fruit-ninja/index.html" >Fruit Ninja</a></div>
+    <div class="button_styles"><a href="gs/funny-shooter1/index.html" >Funny Shooter</a></div>
+    <div class="button_styles"><a href="gs/geometry-dash/index.html" >Geometry Dash</a></div>
+    <div class="button_styles"><a href="gs/grey-box-testing/index.html" >Grey Box Testing</a></div>
+    <div class="button_styles"><a href="gs/hole-io/index.html" >Hole.IO</a></div>
+    <div class="button_styles"><a href="gs/idle-breakout/index.html" >Idle Breakout</a></div>
+    <div class="button_styles"><a href="gs/jetpack-joyride/index.html" >Jetpack Joyride</a></div>
+    <div class="button_styles"><a href="gs/just-fall/index.html" >Just Fall.IO</a></div>
+    <div class="button_styles"><a href="gs/madalin-stunt-2/index.html" >Madalin Stunt Cars 2</a></div>
+    <div class="button_styles"><a href="gs/madalin-stunt-3/index.html" >Madalin Stunt Cars 3</a></div>
+    <div class="button_styles"><a href="gs/minecraft1.8/index.html" >Minecraft 1.8</a></div>
+    <div class="button_styles"><a href="gs/monkeymart/index.html" >Monkey Mart</a></div>
+    <div class="button_styles"><a href="gs/monster-tracks/index.html" >Monster Tracks</a></div>
+    <div class="button_styles"><a href="gs/motox3m/index.html" >MotoX3m</a></div>
+    <div class="button_styles"><a href="gs/portal-flash/index.html" >Portal Flash</a></div>
+    <div class="button_styles"><a href="gs/retrobowl/index.html" >Retrobowl</a></div>
+    <div class="button_styles"><a href="gs/riddle-school/index.html" >Riddle School</a></div>
+    <div class="button_styles"><a href="gs/riddle-school-2/index.html" >Riddle School 2</a></div>
+    <div class="button_styles"><a href="gs/riddle-school-3/index.html" >Riddle School 3</a></div>
+    <div class="button_styles"><a href="gs/riddle-school-4/index.html" >Riddle School 4</a></div>
+    <div class="button_styles"><a href="gs/riddle-school-5/index.html" >Riddle School 5</a></div>
+    <div class="button_styles"><a href="gs/rocket-league/index.html" >Rocket League</a></div>
+    <div class="button_styles"><a href="gs/rooftop-snipers/index.html" >Rooftop Snipers</a></div>
+    <div class="button_styles"><a href="gs/run-3/index.html" >Run 3</a></div>
+    <div class="button_styles"><a href="gs/scrap-metal-3/index.html" >Scrap Metal 3</a></div>
+    <div class="button_styles"><a href="gs/slope/index.html" >Slope</a></div>
+    <div class="button_styles"><a href="gs/sm64/index.html" >Super Mario 64</a></div>
+    <div class="button_styles"><a href="gs/smashkarts/index.html" >Smash Karts</a></div>
+    <div class="button_styles"><a href="gs/snowball-io/index.html" >Snowball.Io</a></div>
+    <div class="button_styles"><a href="gs/stack/index.html" >Stack</a></div>
+    <div class="button_styles"><a href="gs/stack-ball/index.html" >Stack Ball</a></div>
+    <div class="button_styles"><a href="gs/stickmanhook/index.html" >Stickman Hook</a></div>
+    <div class="button_styles"><a href="gs/subwaysurfers/index.html" >Subway Surfers</a></div>
+    <div class="button_styles"><a href="gs/superhot/index.html" >Superhot</a></div>
+    <div class="button_styles"><a href="gs/tanuki-sunset/index.html" >Tanuki Sunset</a></div>
+    <div class="button_styles"><a href="gs/templerun/index.html" >Temple Run</a></div>
+    <div class="button_styles"><a href="gs/tetris/index.html" >Tetris</a></div>
+    <div class="button_styles"><a href="gs/time-shooter/index.html" >Time Shooter S.W.A.T</a></div>
+    <div class="button_styles"><a href="gs/tiny-fishing/index.html" >Tiny Fishing</a></div>
+    <div class="button_styles"><a href="gs/top-speed-racing-3d/index.html" >Top Speed Racing</a></div>
+    <div class="button_styles"><a href="gs/townscaper/index.html" >Townscraper</a></div>
+    <div class="button_styles"><a href="gs/tunnel-rush/index.html" >Tunnel Rush</a></div>
+    <div class="button_styles"><a href="gs/vex3/index.html" >Vex 3</a></div>
+    <div class="button_styles"><a href="gs/vex4/index.html" >Vex 4</a></div>
+    <div class="button_styles"><a href="gs/vex5/index.html" >Vex 5</a></div>
+    <div class="button_styles"><a href="gs/vex6/index.html" >Vex 6</a></div>
+    <div class="button_styles"><a href="gs/vex7/index.html" >Vex 7</a></div>
+    <div class="button_styles"><a href="gs/wordle/index.html" >Wordle</a></div>
+</div>
+<div class="bottom-title1">Nova WHS</div>
+
+    </body>
+
+    <script>
+        alert("When accessing this website, you are solely responsible for any activities that occur on your computer or network.")
+    </script>
+</html>
